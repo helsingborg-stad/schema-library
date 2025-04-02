@@ -11,8 +11,13 @@
             "email": "thor.brink@helsingborg.se"
         }
     ],
+    "autoload": {
+        "psr-4": {
+            "Municipio\\Schema\\": "src"
+        }
+    },
     "scripts": {
-        "generate": "vendor/bin/generate -additionalSources=municipio:https://schema.municipio.tech/schema.jsonld ./src"
+        "generate": "vendor/bin/generate -o 'Municipio\\Schema' -additionalSources=municipio:https://schema.municipio.tech/schema.jsonld ./src"
     },
     "config": {
         "allow-plugins": {
@@ -20,7 +25,7 @@
         }
     },
     "require": {
-        "helsingborg-stad/schema-library-generator": "^1.0"
+        "helsingborg-stad/schema-library-generator": "^2.0.0"
     },
     "version": "0.1.5"
 }
