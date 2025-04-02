@@ -2,7 +2,7 @@
     "name": "helsingborg-stad/schema-library",
     "autoload": {
         "psr-4": {
-            "HelsingborgStad\\Schema\\": "src/"
+            "Municipio\\Schema\\": "src"
         }
     },
     "authors": [
@@ -11,11 +11,6 @@
             "email": "thor.brink@helsingborg.se"
         }
     ],
-    "autoload": {
-        "psr-4": {
-            "Municipio\\Schema\\": "src"
-        }
-    },
     "scripts": {
         "generate": "vendor/bin/generate -o 'Municipio\\Schema' -additionalSources=municipio:https://schema.municipio.tech/schema.jsonld ./src"
     },
@@ -27,5 +22,5 @@
     "require": {
         "helsingborg-stad/schema-library-generator": "^2.0.0"
     },
-    "version": "0.1.5"
+    "version": "0.2.0"
 }
