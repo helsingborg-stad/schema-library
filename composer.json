@@ -1,0 +1,25 @@
+{
+    "name": "helsingborg-stad/schema-library",
+    "autoload": {
+        "psr-4": {
+            "HelsingborgStad\\Schema\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Thor Brink",
+            "email": "thor.brink@helsingborg.se"
+        }
+    ],
+    "scripts": {
+        "generate": "vendor/bin/generate -additionalSources=municipio:https://schema.municipio.tech/schema.jsonld ./src"
+    },
+    "config": {
+        "allow-plugins": {
+            "dealerdirect/phpcodesniffer-composer-installer": true
+        }
+    },
+    "require": {
+        "helsingborg-stad/schema-library-generator": "^1.0"
+    }
+}
