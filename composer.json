@@ -20,7 +20,7 @@
             "dealerdirect/phpcodesniffer-composer-installer": true
         }
     },
-    "version": "0.2.2",
+    "version": "0.2.3",
     "require-dev": {
         "helsingborg-stad/schema-library-generator": "^2.1",
         "phpunit/phpunit": "^12.1"
