@@ -12,7 +12,8 @@
         }
     ],
     "scripts": {
-        "generate": "vendor/bin/generate -o 'Municipio\\Schema' --additionalSources='municipio:https://schema.municipio.tech/schema.jsonld' ./src"
+        "generate": "vendor/bin/generate -o 'Municipio\\Schema' --additionalSources='municipio:https://schema.municipio.tech/schema.jsonld' ./src",
+        "test": "vendor/bin/phpunit --testdox --colors"
     },
     "config": {
         "allow-plugins": {
@@ -21,6 +22,7 @@
     },
     "version": "0.2.2",
     "require-dev": {
-        "helsingborg-stad/schema-library-generator": "^2.1"
+        "helsingborg-stad/schema-library-generator": "^2.1",
+        "phpunit/phpunit": "^12.1"
     }
 }
