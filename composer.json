@@ -12,15 +12,17 @@
         }
     ],
     "scripts": {
-        "generate": "vendor/bin/generate -o 'Municipio\\Schema' -additionalSources=municipio:https://schema.municipio.tech/schema.jsonld ./src"
+        "generate": "vendor/bin/generate -o 'Municipio\\Schema' --additionalSources='municipio:https://schema.municipio.tech/schema.jsonld' ./src",
+        "test": "vendor/bin/phpunit --testdox --colors"
     },
     "config": {
         "allow-plugins": {
             "dealerdirect/phpcodesniffer-composer-installer": true
         }
     },
-    "require": {
-        "helsingborg-stad/schema-library-generator": "^2.0.0"
-    },
-    "version": "0.2.2"
+    "version": "0.2.2",
+    "require-dev": {
+        "helsingborg-stad/schema-library-generator": "^2.1",
+        "phpunit/phpunit": "^12.1"
+    }
 }

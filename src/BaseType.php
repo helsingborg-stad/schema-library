@@ -17,9 +17,9 @@ abstract class BaseType implements Type, ArrayAccess, JsonSerializable
     /** @var string */
     protected $nonce = '';
 
-    public function getContext(): string
+    public function getContext(): string|array
     {
-        return 'https://schema.org';
+        return ["schema" => "https://schema.org", "municipio" => "https://schema.municipio.tech/schema.jsonld", ];
     }
 
     public function getType(): string
