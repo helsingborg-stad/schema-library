@@ -15,6 +15,22 @@ use \Municipio\Schema\Contracts\ThingContract;
 class Residence extends BaseType implements ResidenceContract, PlaceContract, ThingContract
 {
     /**
+     * Indicates whether a FoodEstablishment or Place accepts reservations.
+     * Values can be Boolean, a URL at which reservations can be made, or the
+     * strings 'Yes' or 'No'.
+     *
+     * @param bool|bool[]|string|string[] $acceptsReservations
+     *
+     * @return static
+     *
+     * @see https://schema.org/acceptsReservations
+     */
+    public function acceptsReservations($acceptsReservations)
+    {
+        return $this->setProperty('acceptsReservations', $acceptsReservations);
+    }
+
+    /**
      * A floorplan of some [[Accommodation]].
      *
      * @param \Municipio\Schema\Contracts\FloorPlanContract|\Municipio\Schema\Contracts\FloorPlanContract[] $accommodationFloorPlan

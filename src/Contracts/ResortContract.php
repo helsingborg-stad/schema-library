@@ -6,6 +6,8 @@ interface ResortContract
 {
     public function acceptedPaymentMethod($acceptedPaymentMethod);
 
+    public function acceptsReservations($acceptsReservations);
+
     public function actionableFeedbackPolicy($actionableFeedbackPolicy);
 
     public function additionalProperty($additionalProperty);

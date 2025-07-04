@@ -17,6 +17,22 @@ use \Municipio\Schema\Contracts\ThingContract;
 class Embassy extends BaseType implements EmbassyContract, CivicStructureContract, GovernmentBuildingContract, PlaceContract, ThingContract
 {
     /**
+     * Indicates whether a FoodEstablishment or Place accepts reservations.
+     * Values can be Boolean, a URL at which reservations can be made, or the
+     * strings 'Yes' or 'No'.
+     *
+     * @param bool|bool[]|string|string[] $acceptsReservations
+     *
+     * @return static
+     *
+     * @see https://schema.org/acceptsReservations
+     */
+    public function acceptsReservations($acceptsReservations)
+    {
+        return $this->setProperty('acceptsReservations', $acceptsReservations);
+    }
+
+    /**
      * A property-value pair representing an additional characteristic of the
      * entity, e.g. a product feature or another characteristic for which there
      * is no matching property in schema.org.

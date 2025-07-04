@@ -33,9 +33,9 @@ class FoodEstablishment extends BaseType implements FoodEstablishmentContract, L
     }
 
     /**
-     * Indicates whether a FoodEstablishment accepts reservations. Values can be
-     * Boolean, an URL at which reservations can be made or (for backwards
-     * compatibility) the strings ```Yes``` or ```No```.
+     * Indicates whether a FoodEstablishment or Place accepts reservations.
+     * Values can be Boolean, a URL at which reservations can be made, or the
+     * strings 'Yes' or 'No'.
      *
      * @param bool|bool[]|string|string[] $acceptsReservations
      *
