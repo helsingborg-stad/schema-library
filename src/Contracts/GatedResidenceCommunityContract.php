@@ -4,6 +4,8 @@ namespace Municipio\Schema\Contracts;
 
 interface GatedResidenceCommunityContract
 {
+    public function acceptsReservations($acceptsReservations);
+
     public function accommodationFloorPlan($accommodationFloorPlan);
 
     public function additionalProperty($additionalProperty);

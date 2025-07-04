@@ -4,6 +4,8 @@ namespace Municipio\Schema\Contracts;
 
 interface SingleFamilyResidenceContract
 {
+    public function acceptsReservations($acceptsReservations);
+
     public function accommodationCategory($accommodationCategory);
 
     public function accommodationFloorPlan($accommodationFloorPlan);

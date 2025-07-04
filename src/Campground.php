@@ -52,6 +52,22 @@ class Campground extends BaseType implements CampgroundContract, CivicStructureC
     }
 
     /**
+     * Indicates whether a FoodEstablishment or Place accepts reservations.
+     * Values can be Boolean, a URL at which reservations can be made, or the
+     * strings 'Yes' or 'No'.
+     *
+     * @param bool|bool[]|string|string[] $acceptsReservations
+     *
+     * @return static
+     *
+     * @see https://schema.org/acceptsReservations
+     */
+    public function acceptsReservations($acceptsReservations)
+    {
+        return $this->setProperty('acceptsReservations', $acceptsReservations);
+    }
+
+    /**
      * For a [[NewsMediaOrganization]] or other news-related [[Organization]], a
      * statement about public engagement activities (for news media, the
      * newsroom’s), including involving the public - digitally or otherwise --

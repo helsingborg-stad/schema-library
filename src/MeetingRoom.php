@@ -23,6 +23,22 @@ use \Municipio\Schema\Contracts\ThingContract;
 class MeetingRoom extends BaseType implements MeetingRoomContract, AccommodationContract, PlaceContract, RoomContract, ThingContract
 {
     /**
+     * Indicates whether a FoodEstablishment or Place accepts reservations.
+     * Values can be Boolean, a URL at which reservations can be made, or the
+     * strings 'Yes' or 'No'.
+     *
+     * @param bool|bool[]|string|string[] $acceptsReservations
+     *
+     * @return static
+     *
+     * @see https://schema.org/acceptsReservations
+     */
+    public function acceptsReservations($acceptsReservations)
+    {
+        return $this->setProperty('acceptsReservations', $acceptsReservations);
+    }
+
+    /**
      * Category of an [[Accommodation]], following real estate conventions, e.g.
      * RESO (see
      * [PropertySubType](https://ddwiki.reso.org/display/DDW17/PropertySubType+Field),

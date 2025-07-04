@@ -4,6 +4,8 @@ namespace Municipio\Schema\Contracts;
 
 interface BusStationContract
 {
+    public function acceptsReservations($acceptsReservations);
+
     public function additionalProperty($additionalProperty);
 
     public function additionalType($additionalType);
