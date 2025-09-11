@@ -16,6 +16,8 @@ interface ElementarySchoolContract
 
     public function address($address);
 
+    public function afterSchoolCare($afterSchoolCare);
+
     public function agentInteractionStatistic($agentInteractionStatistic);
 
     public function aggregateRating($aggregateRating);
@@ -185,6 +187,8 @@ interface ElementarySchoolContract
     public function nonprofitStatus($nonprofitStatus);
 
     public function numberOfEmployees($numberOfEmployees);
+
+    public function numberOfStudents($numberOfStudents);
 
     public function openingHours($openingHours);
 

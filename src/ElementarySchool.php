@@ -128,6 +128,20 @@ class ElementarySchool extends BaseType implements ElementarySchoolContract, Civ
     }
 
     /**
+     * Contains information about the after school care program offered, if any.
+     *
+     * @param \Municipio\Schema\Contracts\ServiceContract|\Municipio\Schema\Contracts\ServiceContract[] $afterSchoolCare
+     *
+     * @return static
+     *
+     * @see https://schema.org/afterSchoolCare
+     */
+    public function afterSchoolCare($afterSchoolCare)
+    {
+        return $this->setProperty('afterSchoolCare', $afterSchoolCare);
+    }
+
+    /**
      * The number of completed interactions for this entity, in a particular
      * role (the 'agent'), in a particular action (indicated in the statistic),
      * and in a particular context (i.e. interactionService).
@@ -1481,6 +1495,20 @@ class ElementarySchool extends BaseType implements ElementarySchoolContract, Civ
     public function numberOfEmployees($numberOfEmployees)
     {
         return $this->setProperty('numberOfEmployees', $numberOfEmployees);
+    }
+
+    /**
+     * Contains information about the number of students enrolled.
+     *
+     * @param bool|bool[] $numberOfStudents
+     *
+     * @return static
+     *
+     * @see https://schema.org/numberOfStudents
+     */
+    public function numberOfStudents($numberOfStudents)
+    {
+        return $this->setProperty('numberOfStudents', $numberOfStudents);
     }
 
     /**
