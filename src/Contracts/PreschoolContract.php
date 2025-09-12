@@ -184,6 +184,8 @@ interface PreschoolContract
 
     public function nonprofitStatus($nonprofitStatus);
 
+    public function numberOfChildren($numberOfChildren);
+
     public function numberOfEmployees($numberOfEmployees);
 
     public function openingHours($openingHours);

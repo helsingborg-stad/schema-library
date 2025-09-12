@@ -1470,6 +1470,20 @@ class Preschool extends BaseType implements PreschoolContract, CivicStructureCon
     }
 
     /**
+     * Contains information about the number of children enrolled.
+     *
+     * @param bool|bool[] $numberOfChildren
+     *
+     * @return static
+     *
+     * @see https://schema.org/numberOfChildren
+     */
+    public function numberOfChildren($numberOfChildren)
+    {
+        return $this->setProperty('numberOfChildren', $numberOfChildren);
+    }
+
+    /**
      * The number of employees in an organization, e.g. business.
      *
      * @param \Municipio\Schema\Contracts\QuantitativeValueContract|\Municipio\Schema\Contracts\QuantitativeValueContract[] $numberOfEmployees
