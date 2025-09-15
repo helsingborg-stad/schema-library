@@ -188,6 +188,8 @@ interface PreschoolContract
 
     public function numberOfEmployees($numberOfEmployees);
 
+    public function numberOfGroups($numberOfGroups);
+
     public function openingHours($openingHours);
 
     public function openingHoursSpecification($openingHoursSpecification);

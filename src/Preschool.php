@@ -1472,7 +1472,7 @@ class Preschool extends BaseType implements PreschoolContract, CivicStructureCon
     /**
      * Contains information about the number of children enrolled.
      *
-     * @param bool|bool[] $numberOfChildren
+     * @param float|float[]|int|int[] $numberOfChildren
      *
      * @return static
      *
@@ -1495,6 +1495,21 @@ class Preschool extends BaseType implements PreschoolContract, CivicStructureCon
     public function numberOfEmployees($numberOfEmployees)
     {
         return $this->setProperty('numberOfEmployees', $numberOfEmployees);
+    }
+
+    /**
+     * Contains information about the number of groups the preschool is divided
+     * into.
+     *
+     * @param float|float[]|int|int[] $numberOfGroups
+     *
+     * @return static
+     *
+     * @see https://schema.org/numberOfGroups
+     */
+    public function numberOfGroups($numberOfGroups)
+    {
+        return $this->setProperty('numberOfGroups', $numberOfGroups);
     }
 
     /**

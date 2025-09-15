@@ -1500,7 +1500,7 @@ class ElementarySchool extends BaseType implements ElementarySchoolContract, Civ
     /**
      * Contains information about the number of students enrolled.
      *
-     * @param bool|bool[] $numberOfStudents
+     * @param float|float[]|int|int[] $numberOfStudents
      *
      * @return static
      *
