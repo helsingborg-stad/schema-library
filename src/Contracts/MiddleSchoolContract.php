@@ -242,4 +242,6 @@ interface MiddleSchoolContract
 
     public function vatID($vatID);
 
+    public function video($video);
+
 }

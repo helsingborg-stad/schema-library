@@ -242,4 +242,6 @@ interface CollegeOrUniversityContract
 
     public function vatID($vatID);
 
+    public function video($video);
+
 }

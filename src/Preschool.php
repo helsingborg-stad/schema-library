@@ -1961,4 +1961,18 @@ class Preschool extends BaseType implements PreschoolContract, CivicStructureCon
         return $this->setProperty('vatID', $vatID);
     }
 
+    /**
+     * A video of the item. This can be a URL or a fully described VideoObject.
+     *
+     * @param \Municipio\Schema\Contracts\VideoObjectContract|\Municipio\Schema\Contracts\VideoObjectContract[] $video
+     *
+     * @return static
+     *
+     * @see https://schema.org/video
+     */
+    public function video($video)
+    {
+        return $this->setProperty('video', $video);
+    }
+
 }

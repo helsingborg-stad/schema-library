@@ -242,4 +242,6 @@ interface HighSchoolContract
 
     public function vatID($vatID);
 
+    public function video($video);
+
 }

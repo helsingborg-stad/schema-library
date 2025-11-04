@@ -246,4 +246,6 @@ interface ElementarySchoolContract
 
     public function vatID($vatID);
 
+    public function video($video);
+
 }

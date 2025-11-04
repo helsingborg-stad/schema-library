@@ -246,4 +246,6 @@ interface PreschoolContract
 
     public function vatID($vatID);
 
+    public function video($video);
+
 }
