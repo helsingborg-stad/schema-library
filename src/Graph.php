@@ -769,6 +769,7 @@ use Municipio\Schema\Exceptions\TypeNotInGraph;
  * @method self|ShoeStore shoeStore(string|\Closure|null $identifier = null, \Closure|null $callback = null)
  * @method self|ShoppingCenter shoppingCenter(string|\Closure|null $identifier = null, \Closure|null $callback = null)
  * @method self|ShortStory shortStory(string|\Closure|null $identifier = null, \Closure|null $callback = null)
+ * @method self|SingleDigitalGateway singleDigitalGateway(string|\Closure|null $identifier = null, \Closure|null $callback = null)
  * @method self|SingleFamilyResidence singleFamilyResidence(string|\Closure|null $identifier = null, \Closure|null $callback = null)
  * @method self|SiteNavigationElement siteNavigationElement(string|\Closure|null $identifier = null, \Closure|null $callback = null)
  * @method self|SizeGroupEnumeration sizeGroupEnumeration(string|\Closure|null $identifier = null, \Closure|null $callback = null)

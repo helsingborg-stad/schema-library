@@ -768,6 +768,7 @@ use Municipio\Schema\Exceptions\TypeNotInMultiTypedEntity;
  * @method self|ShoeStore shoeStore(\Closure|null $callback = null)
  * @method self|ShoppingCenter shoppingCenter(\Closure|null $callback = null)
  * @method self|ShortStory shortStory(\Closure|null $callback = null)
+ * @method self|SingleDigitalGateway singleDigitalGateway(\Closure|null $callback = null)
  * @method self|SingleFamilyResidence singleFamilyResidence(\Closure|null $callback = null)
  * @method self|SiteNavigationElement siteNavigationElement(\Closure|null $callback = null)
  * @method self|SizeGroupEnumeration sizeGroupEnumeration(\Closure|null $callback = null)

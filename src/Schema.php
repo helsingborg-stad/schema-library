@@ -3787,6 +3787,11 @@ class Schema
         return new ShortStory();
     }
 
+    public static function singleDigitalGateway(): SingleDigitalGateway
+    {
+        return new SingleDigitalGateway();
+    }
+
     public static function singleFamilyResidence(): SingleFamilyResidence
     {
         return new SingleFamilyResidence();
