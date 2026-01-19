@@ -277,6 +277,20 @@ class Schedule extends BaseType implements ScheduleContract, IntangibleContract,
     }
 
     /**
+     * The availability of the schedule.
+     *
+     * @param \Municipio\Schema\Contracts\ItemAvailabilityContract|\Municipio\Schema\Contracts\ItemAvailabilityContract[] $itemAvailability
+     *
+     * @return static
+     *
+     * @see https://schema.org/schedule.itemAvailability
+     */
+    public function itemAvailability($itemAvailability)
+    {
+        return $this->setProperty('itemAvailability', $itemAvailability);
+    }
+
+    /**
      * Indicates a page (or other CreativeWork) for which this thing is the main
      * entity being described. See [background
      * notes](/docs/datamodel.html#mainEntityBackground) for details.

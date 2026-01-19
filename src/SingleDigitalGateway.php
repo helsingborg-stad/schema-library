@@ -8,7 +8,7 @@ use \Municipio\Schema\Contracts\ThingContract;
 /**
  * Single Digital Gateway (SDG)
  *
- * @see municipio:SDG
+ * @see municipio:SingleDigitalGateway
  *
  */
 class SingleDigitalGateway extends BaseType implements SingleDigitalGatewayContract, ThingContract

@@ -32,6 +32,8 @@ interface ScheduleContract
 
     public function image($image);
 
+    public function itemAvailability($itemAvailability);
+
     public function mainEntityOfPage($mainEntityOfPage);
 
     public function name($name);
