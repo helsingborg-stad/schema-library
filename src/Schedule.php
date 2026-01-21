@@ -307,20 +307,6 @@ class Schedule extends BaseType implements ScheduleContract, IntangibleContract,
     }
 
     /**
-     * The offers available on this schedule.
-     *
-     * @param \Municipio\Schema\Contracts\OfferContract|\Municipio\Schema\Contracts\OfferContract[] $offers
-     *
-     * @return static
-     *
-     * @see https://schema.org/schedule.offers
-     */
-    public function offers($offers)
-    {
-        return $this->setProperty('offers', $offers);
-    }
-
-    /**
      * Indicates a potential Action, which describes an idealized action in
      * which this thing would play an 'object' role.
      *

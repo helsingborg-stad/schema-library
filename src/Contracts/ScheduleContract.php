@@ -36,8 +36,6 @@ interface ScheduleContract
 
     public function name($name);
 
-    public function offers($offers);
-
     public function potentialAction($potentialAction);
 
     public function repeatCount($repeatCount);
