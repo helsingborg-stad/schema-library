@@ -785,6 +785,8 @@ use Municipio\Schema\Exceptions\TypeNotInGraph;
  * @method self|SpeakableSpecification speakableSpecification(string|\Closure|null $identifier = null, \Closure|null $callback = null)
  * @method self|SpecialAnnouncement specialAnnouncement(string|\Closure|null $identifier = null, \Closure|null $callback = null)
  * @method self|Specialty specialty(string|\Closure|null $identifier = null, \Closure|null $callback = null)
+ * @method self|SponsorDemandEvent sponsorDemandEvent(string|\Closure|null $identifier = null, \Closure|null $callback = null)
+ * @method self|SponsorOffer sponsorOffer(string|\Closure|null $identifier = null, \Closure|null $callback = null)
  * @method self|SportingGoodsStore sportingGoodsStore(string|\Closure|null $identifier = null, \Closure|null $callback = null)
  * @method self|SportsActivityLocation sportsActivityLocation(string|\Closure|null $identifier = null, \Closure|null $callback = null)
  * @method self|SportsClub sportsClub(string|\Closure|null $identifier = null, \Closure|null $callback = null)

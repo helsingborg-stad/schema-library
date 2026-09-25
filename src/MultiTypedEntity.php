@@ -784,6 +784,8 @@ use Municipio\Schema\Exceptions\TypeNotInMultiTypedEntity;
  * @method self|SpeakableSpecification speakableSpecification(\Closure|null $callback = null)
  * @method self|SpecialAnnouncement specialAnnouncement(\Closure|null $callback = null)
  * @method self|Specialty specialty(\Closure|null $callback = null)
+ * @method self|SponsorDemandEvent sponsorDemandEvent(\Closure|null $callback = null)
+ * @method self|SponsorOffer sponsorOffer(\Closure|null $callback = null)
  * @method self|SportingGoodsStore sportingGoodsStore(\Closure|null $callback = null)
  * @method self|SportsActivityLocation sportsActivityLocation(\Closure|null $callback = null)
  * @method self|SportsClub sportsClub(\Closure|null $callback = null)

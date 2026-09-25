@@ -3867,6 +3867,16 @@ class Schema
         return new Specialty();
     }
 
+    public static function sponsorDemandEvent(): SponsorDemandEvent
+    {
+        return new SponsorDemandEvent();
+    }
+
+    public static function sponsorOffer(): SponsorOffer
+    {
+        return new SponsorOffer();
+    }
+
     public static function sportingGoodsStore(): SportingGoodsStore
     {
         return new SportingGoodsStore();
