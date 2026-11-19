@@ -88,6 +88,8 @@ interface SponsorOfferContract
 
     public function itemOffered($itemOffered);
 
+    public function keywords($keywords);
+
     public function leaseLength($leaseLength);
 
     public function mainEntityOfPage($mainEntityOfPage);
@@ -102,6 +104,8 @@ interface SponsorOfferContract
 
     public function potentialAction($potentialAction);
 
+    public function practicalInformation($practicalInformation);
+
     public function price($price);
 
     public function priceCurrency($priceCurrency);
@@ -109,6 +113,8 @@ interface SponsorOfferContract
     public function priceSpecification($priceSpecification);
 
     public function priceValidUntil($priceValidUntil);
+
+    public function requestedCounterPerformance($requestedCounterPerformance);
 
     public function review($review);
 
@@ -123,6 +129,8 @@ interface SponsorOfferContract
     public function shippingDetails($shippingDetails);
 
     public function sku($sku);
+
+    public function sponsorshipDate($sponsorshipDate);
 
     public function subjectOf($subjectOf);
 

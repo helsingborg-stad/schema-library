@@ -3867,9 +3867,9 @@ class Schema
         return new Specialty();
     }
 
-    public static function sponsorDemandEvent(): SponsorDemandEvent
+    public static function sponsorDemand(): SponsorDemand
     {
-        return new SponsorDemandEvent();
+        return new SponsorDemand();
     }
 
     public static function sponsorOffer(): SponsorOffer
